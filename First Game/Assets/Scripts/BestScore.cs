@@ -7,11 +7,12 @@ public class BestScore : MonoBehaviour
     public Text scoreCounter;
 
     public Score scoreScript;
-    static int bestScore = 0;
+    int bestScore;
 
     // Use this for initialization
     void Start()
     {
+        bestScore = PlayerPrefs.GetInt("bestScore", 0);
         scoreCounter.text = bestScore.ToString();
     }
 
@@ -25,6 +26,7 @@ public class BestScore : MonoBehaviour
         if (scoreScript.score > bestScore)
         {
             bestScore = scoreScript.score;
+            PlayerPrefs.SetInt("bestScore", bestScore);
         }
     }
 }

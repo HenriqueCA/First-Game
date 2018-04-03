@@ -6,6 +6,7 @@ Assets/Welcome.unity
 Assets/game.unity
 SceneListEnd?
 52a7a29c8eea2d2f88f986ba8d73b3ae Assembly-CSharp.dll:.Score
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Quit
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 dbc29a6f2739d277c10da432d73adb6d UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 8144169769d51429c4aedc8b0f92d47b UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -96,6 +97,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 31aaf521b3ef8699466676591ea0efd4 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 df374c01140c2d578bf70cbd60073d1d UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Welcome
+650c1e412dac0323d37ae3023565f947 Assembly-CSharp.dll:.DeathCounter
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -156,7 +158,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 73f492877e449307b94b819b08656f1e Assembly-CSharp.dll:.Fall
+17cf1e98e9aaa6adb25cad862fc75c7e Assembly-CSharp.dll:.AudioManager
 3ae5a67046df1019e7ee2770919bd2a2 Assembly-CSharp.dll:.FollowPlayer
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Quit
-650c1e412dac0323d37ae3023565f947 Assembly-CSharp.dll:.DeathCounter
 9dbcabedac62df59359c575536624977 Assembly-CSharp.dll:.BestScore
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ChangeVolume
