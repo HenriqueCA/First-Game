@@ -7,11 +7,6 @@ public class Fall : MonoBehaviour
     public Rigidbody block;
 
     public float velocity = 2000;
-
-    void Start()
-    {
-        velocity += Time.timeSinceLevelLoad * 100;
-    }
     void FixedUpdate()
     {
 

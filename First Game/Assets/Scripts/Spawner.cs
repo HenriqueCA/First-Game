@@ -11,7 +11,11 @@ public class Spawner : MonoBehaviour
 
     private float timeToSpawn = 2f;
 
-    private float timeBetweenWaves = 1.1f;
+    private float timeBetweenWaves = 1.5f;
+
+    public float timeToIncreaseDif;
+
+    float time;
 
     // Update is called once per frame
     void Update()
@@ -20,6 +24,18 @@ public class Spawner : MonoBehaviour
         {
             SpawnBlocks();
             timeToSpawn = Time.time + timeBetweenWaves;
+        }
+        IncreaseSpawn();
+
+    }
+
+    void IncreaseSpawn()
+    {
+        time += Time.deltaTime;
+        if (time > timeToIncreaseDif)
+        {
+            time = 0f;
+            timeBetweenWaves = (timeBetweenWaves * 0.95f);
         }
 
     }

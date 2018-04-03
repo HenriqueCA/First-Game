@@ -1,11 +1,14 @@
 ﻿using UnityEngine.Audio;
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
 
     public Sound[] sounds;
+
+    public static float volumeMaster = 1f;
 
     /// <summary>
     /// Awake is called when the script instance is being loaded.
@@ -16,7 +19,7 @@ public class AudioManager : MonoBehaviour
         {
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
-            s.source.volume = s.volume;
+            s.source.volume = volumeMaster;
             s.source.pitch = s.pitch;
         }
 
@@ -41,6 +44,7 @@ public class AudioManager : MonoBehaviour
         foreach (Sound s in sounds)
         {
             s.source.volume = volume;
+            volumeMaster = volume;
         }
     }
 

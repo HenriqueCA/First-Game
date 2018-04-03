@@ -289,6 +289,7 @@ GameObject:
   - component: {fileID: 244163304}
   - component: {fileID: 244163303}
   - component: {fileID: 244163302}
+  - component: {fileID: 244163305}
   m_Layer: 5
   m_Name: Scrollbar
   m_TagString: Untagged
@@ -302,7 +303,7 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 244163300}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -312,7 +313,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 689, y: 393}
+  m_AnchoredPosition: {x: 689, y: 392.99988}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &244163302
@@ -405,6 +406,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 244163300}
+--- !u!114 &244163305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 244163300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f4385e5a86dffb4699b320a1b0655b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollbar: {fileID: 244163302}
 --- !u!1 &298815002 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1241462130857398, guid: dfd17c0dbdd5b7e46a060d83ba7b8334,
@@ -808,6 +821,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 114738097341843728, guid: 84517bc2fd470ad469b2d7a685cc25f5,
+        type: 2}
+      propertyPath: scrollbar
+      value: 
+      objectReference: {fileID: 244163302}
+    - target: {fileID: 114738097341843728, guid: 84517bc2fd470ad469b2d7a685cc25f5,
+        type: 2}
+      propertyPath: scrollBar
+      value: 
+      objectReference: {fileID: 244163302}
+    - target: {fileID: 114738097341843728, guid: 84517bc2fd470ad469b2d7a685cc25f5,
+        type: 2}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2050153805}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 84517bc2fd470ad469b2d7a685cc25f5, type: 2}
   m_IsPrefabParent: 0
@@ -849,6 +877,11 @@ Prefab:
     - target: {fileID: 4698004196339212, guid: 9393b1caa06e2e943af34e7873b24630, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114546665129751172, guid: 9393b1caa06e2e943af34e7873b24630,
+        type: 2}
+      propertyPath: timeToIncreaseDif
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9393b1caa06e2e943af34e7873b24630, type: 2}
@@ -999,3 +1032,8 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c9337f993e5ef17448e226b22c4d4dd9, type: 2}
   m_IsPrefabParent: 0
+--- !u!223 &2050153805 stripped
+Canvas:
+  m_PrefabParentObject: {fileID: 223845470624563398, guid: dfd17c0dbdd5b7e46a060d83ba7b8334,
+    type: 2}
+  m_PrefabInternal: {fileID: 240615111}

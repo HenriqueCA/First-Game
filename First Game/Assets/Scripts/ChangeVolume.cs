@@ -8,5 +8,4 @@ public class ChangeVolume : MonoBehaviour
     {
         GameObject.FindObjectOfType<AudioManager>().changeVolume(scrollBar.value);
     }
-
 }
